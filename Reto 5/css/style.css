@@ -1,0 +1,193 @@
+
+    /* Reto 5 - Estilo CSS para Infraestructura para Energías Limpias */ 
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #070707;
+      padding: 20px;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0dd1d8, #48b1bf);
+      padding: 20px;
+      text-align: center;
+      color: rgb(7, 7, 7);
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(6, 190, 182, 0.6);
+      margin-bottom: 20px;
+    }
+
+    header::before {
+      content: "Infraestructura para Energías Limpias";
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+        "sidebar item"
+        "sidebar item"
+        "sidebar item"
+        "sidebar item"
+        "sidebar item"
+        "sidebar item"
+        "sidebar item";
+      gap: 20px;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background: linear-gradient(135deg, #0ff1e6, #09eecf);
+      padding: 20px;
+      border-radius: 12px;
+      color: rgb(8, 8, 8);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      
+    }
+
+    .sidebar h2 {
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      border-bottom: 2px solid #111111;
+      padding-bottom: 5px;
+      
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+      
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+      
+    }
+.sidebar
+    .sidebar a {
+      color: rgb(15, 15, 15);
+      text-decoration: none;
+      font-weight: bold;
+      
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+      color: #ffdd57;
+    }
+  
+    .portafaolio{
+      display: grid;
+      gap: 20px;
+      padding: 20px;
+      padding-bottom: 80px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "item1 item1 item1"
+        "item2 item3 item4"
+        "item5 item5 item5";
+      grid-auto-rows: auto;
+    }
+    .item, .item, .item, .item, .item, .item, .item {
+      background: linear-gradient(135deg, #12b3f3, #4facfe);
+      color: #111;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    }
+    img{
+      width: 100%;
+    } 
+    img {
+      width: 220px;
+      height: 220px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      border-radius: 100%;
+    }
+
+
+    .item { grid-area: item; }
+    .item { grid-area: item; }
+    .item { grid-area: item; }
+    .item { grid-area: item; }
+    .item { grid-area: item; }
+    .item { grid-area: item; }
+    .item { grid-area: item; }
+
+    section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #111;
+      padding-bottom: 4px;
+       display:flex ;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            border: #333 px solid;
+            padding: 10px;
+            background-color: #20d0fc;
+    }
+
+    section p {
+      line-height: 1.6;
+    } 
+    
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      padding: 15px;
+      background-color: #1a1a2e;
+      color: #ccc;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    footer a {
+      color: #00fff0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #ff00c8;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .layout-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "sidebar"
+          "item"
+          "item"
+          "item"
+          "item"
+          "item"
+          "iitem";
+      }
+      .sidebar{
+        visibility: hidden;
+      }
+      .portafaolio{
+        margin-left: 20px;
+        padding-bottom: 40px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "item1"
+          "item2"
+          "item3"
+          "item4"
+          "item5";
+      }
+    }
+  
+        
